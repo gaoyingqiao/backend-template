@@ -1,0 +1,13 @@
+{
+  "entry": "src/index.js",
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "true" }]
+  ],
+  "proxy": {
+    "/api": {
+      "target": "https://bond.jikeyun.net/index.php/interfaces/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  }
+}
